@@ -41,7 +41,7 @@ export default function ProductsPage() {
           </article>
 
           {/* AI Underwriter */}
-          <article className="card product-card">
+          {/* <article className="card product-card">
             <div className="product-tag">Decision Support</div>
             <h3>AI Underwriter</h3>
             <p>
@@ -65,7 +65,7 @@ export default function ProductsPage() {
                 Talk about your use case →
               </a>
             </div>
-          </article>
+          </article> */}
 
           {/* Auto-Mute Device */}
           <article className="card product-card">
