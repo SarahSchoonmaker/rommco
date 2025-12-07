@@ -136,7 +136,7 @@ export default function PricingPage() {
             </p>
           </div>
 
-          <div className="card">
+          {/* <div className="card">
             <h3>Pre-Order / Pilot Program</h3>
             <p className="lead">
               <strong>Early-access pricing – TBD</strong>
@@ -156,7 +156,7 @@ export default function PricingPage() {
                 Join pre-order list
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
