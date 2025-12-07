@@ -43,7 +43,7 @@ export default function HomePage() {
 
         <div className="hero-side">
           <div className="hero-card hero-card--gradient">
-            <h3>Operations-first, not hype-first.</h3>
+            <h3>Efficient & Reliable Operations</h3>
             <p>
               Rommco started as a manufacturing company. That background still
               shapes how we work: build tools that are reliable, understandable,
