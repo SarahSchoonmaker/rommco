@@ -35,10 +35,10 @@ export default function HomePage() {
             </a>
           </div>
 
-          <p className="hero-note">
+          {/* <p className="hero-note">
             From regulated industries to everyday households, we build
             technology that slots into real life instead of fighting against it.
-          </p>
+          </p> */}
         </div>
 
         <div className="hero-side">
