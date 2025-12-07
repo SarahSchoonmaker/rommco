@@ -73,8 +73,7 @@ export default function HomePage() {
         <div className="section-header">
           <h2>Where Rommco fits in.</h2>
           <p className="lead">
-            We don&apos;t try to replace your entire stack. Instead, Rommco
-            products sit alongside your existing tools and make them feel
+            Rommco products sit alongside your existing tools and make them feel
             faster, cleaner, and easier to live with.
           </p>
         </div>
