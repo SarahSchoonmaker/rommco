@@ -12,8 +12,8 @@ export default function AboutPage() {
         <h2 className="card-title">From Parts to Processes</h2>
         <p className="card-body">
           Rommco focuses on tools that remove friction: automating underwriting
-          steps, packaging evidence for auditors, and freeing compliance teams
-          to focus on judgment—not chasing missing files.
+          steps, packaging evidence for auditors, and freeing compliance and
+          operations teams to focus on judgment—not chasing missing files.
         </p>
         <p className="card-body" style={{ marginTop: "0.75rem" }}>
           Current products are dedicated to broker-dealers, RIAs, lenders, and
