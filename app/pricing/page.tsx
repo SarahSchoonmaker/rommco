@@ -9,7 +9,7 @@ export default function PricingPage() {
         <p className="lead">
           Rommco pricing is designed to be simple and transparent. Our RegTech
           Automation Suite is offered as a subscription, while our Auto-Mute
-          device is available as a one-time purchase (with optional pre-order).
+          device is available as a one-time purchase.
         </p>
       </section>
 
