@@ -1,13 +1,12 @@
 // app/layout.tsx
 import "./globals.css";
 import type { Metadata } from "next";
-import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Rommco | Intelligent Systems & Engineering",
+  title: "Rommco | Intelligent Systems & Automation",
   description:
-    "Rommco builds intelligent systems for compliance, automation, and quality-of-life engineering.",
+    "Rommco builds intelligent systems and automation tools that reduce friction, streamline workflows, and enhance everyday life.",
 };
 
 export default function RootLayout({
@@ -17,58 +16,51 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-slate-50 text-slate-900 antialiased">
-        <div className="min-h-screen flex flex-col">
-          {/* Top nav */}
-          <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/80 backdrop-blur">
-            <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
-              <Link href="/" className="flex items-center gap-2">
-                <div className="h-7 w-7 rounded-full bg-gradient-to-br from-sky-500 to-indigo-600 shadow-sm" />
-                <div className="flex flex-col">
-                  <span className="text-sm font-semibold tracking-wide uppercase text-slate-900">
-                    Rommco
-                  </span>
-                  <span className="text-[11px] text-slate-500">
+      <body>
+        <div className="site">
+          <header className="site-header">
+            <div className="container header-inner">
+              <a href="/" className="logo">
+                <div className="logo-mark">R</div>
+                <div className="logo-text-group">
+                  <span className="logo-text-main">Rommco</span>
+                  <span className="logo-text-sub">
                     Systems • Intelligence • Engineering
                   </span>
                 </div>
-              </Link>
-
-              <nav className="flex items-center gap-3 text-sm text-slate-600">
-                <Link href="/products" className="hover:text-slate-900">
+              </a>
+              <nav className="nav">
+                <a href="/" className="nav-link">
+                  Home
+                </a>
+                <a href="/products" className="nav-link">
                   Products
-                </Link>
-                <Link href="/pricing" className="hover:text-slate-900">
+                </a>
+                <a href="/pricing" className="nav-link">
                   Pricing
-                </Link>
-                <Link href="/about" className="hover:text-slate-900">
+                </a>
+                <a href="/about" className="nav-link">
                   About
-                </Link>
-                <Link
-                  href="/contact"
-                  className="rounded-full border border-sky-500 px-3 py-1 text-xs font-medium text-sky-600 hover:bg-sky-50"
-                >
+                </a>
+                <a href="/contact" className="nav-link nav-cta">
                   Contact
-                </Link>
+                </a>
               </nav>
             </div>
           </header>
 
-          {/* Main content */}
-          <main className="flex-1">
-            <div className="mx-auto max-w-5xl px-4 py-10">{children}</div>
+          <main className="main">
+            <div className="container">{children}</div>
           </main>
 
-          {/* Footer */}
-          <footer className="border-t border-slate-200 bg-white">
-            <div className="mx-auto flex max-w-5xl flex-col gap-1 px-4 py-4 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+          <footer className="site-footer">
+            <div className="container footer-inner">
               <p>
                 © {new Date().getFullYear()} Rommco Corporation. All rights
                 reserved.
               </p>
-              <p>
-                Intelligent systems for compliance, automation, and everyday
-                experience.
+              <p className="footer-subtext">
+                Intelligent systems and automation for real work and real life.
               </p>
             </div>
           </footer>

@@ -1,78 +1,106 @@
+// app/page.tsx
+
 export default function HomePage() {
   return (
-    <div>
-      <section className="hero">
-        <div>
-          <h1 className="hero-title">
-            AI Underwriting &{" "}
-            <span className="hero-highlight">RegTech Automation</span> for
-            Broker-Dealers
+    <div className="home">
+      {/* Hero */}
+      <section className="hero hero--enhanced">
+        <div className="hero-main">
+          <div className="eyebrow">
+            Rommco · Intelligent Systems &amp; Automation
+          </div>
+          <h1>
+            Engineering practical technology that makes complex work feel
+            simple.
           </h1>
-          <p className="hero-subtitle">
-            Rommco helps broker-dealers, RIAs, and compliance teams automate
-            underwriting, surface risk, and stay ahead of regulatory
-            change—without adding headcount.
+          <p>
+            Rommco builds intelligent systems and automation tools for
+            businesses and consumers. Rooted in decades of engineering, we
+            design practical technology that reduces friction, streamlines
+            workflows, and enhances everyday life.
           </p>
-          <div className="hero-ctas">
-            <a href="/pricing" className="btn-primary">
-              Subscribe – $350/month
+
+          <div className="pill-row">
+            <span className="pill">Data automation</span>
+            <span className="pill">Workflow intelligence</span>
+            <span className="pill">Consumer devices</span>
+          </div>
+
+          <div className="hero-actions">
+            <a href="/products" className="btn btn-primary">
+              Explore products
             </a>
-            <a href="/products" className="btn-outline">
-              View Products
+            <a href="/about" className="btn btn-secondary">
+              Learn about Rommco
             </a>
           </div>
-          <p style={{ fontSize: "0.85rem", color: "#9ca3af" }}>
-            Built for small and mid-sized firms that need institutional-grade
-            automation on a realistic budget.
+
+          <p className="hero-note">
+            From regulated industries to everyday households, we build
+            technology that slots into real life instead of fighting against it.
           </p>
         </div>
-        <div className="hero-card">
-          <div className="hero-metric">
-            <span>35–60%</span> less time spent on manual underwriting
-            workflows.
+
+        <div className="hero-side">
+          <div className="hero-card hero-card--gradient">
+            <h3>Operations-first, not hype-first.</h3>
+            <p>
+              Rommco started as a manufacturing company. That background still
+              shapes how we work: build tools that are reliable, understandable,
+              and actually used.
+            </p>
           </div>
-          <div className="hero-metric">
-            <span>Real-time</span> alerts for exceptions, missing docs, and
-            policy drift.
+          <div className="hero-card">
+            <h3>Across industries</h3>
+            <p>
+              Our work spans data automation, compliance tooling, workflow
+              intelligence, and consumer hardware that quietly removes everyday
+              friction.
+            </p>
           </div>
-          <p style={{ fontSize: "0.9rem", color: "#cbd5f5" }}>
-            Rommco originated as a manufacturing company. Today, we keep the
-            same practical, operations-first mindset— applying AI and automation
-            to reduce friction and remove repetitive work from your day.
-          </p>
+          <div className="hero-card">
+            <h3>Human-centered outcomes</h3>
+            <p>
+              We measure success in fewer clicks, fewer manual steps, and less
+              cognitive load—so teams can focus on decisions, not busywork.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section className="section">
-        <h2 className="section-title">What Rommco Delivers</h2>
-        <p className="section-subtitle">
-          Our tools plug into your existing workflows—no rip-and-replace. We
-          focus on clear outputs your compliance, supervision, and operations
-          teams can actually use.
-        </p>
-        <div className="grid-3">
-          <div className="card">
-            <div className="card-title">AI Underwriting Automation</div>
-            <p className="card-body">
-              Normalize borrower and deal data, flag edge cases, and generate
-              underwriting summaries tailored to your firm&apos;s rules and risk
-              appetite.
+      {/* Where Rommco helps */}
+      <section className="section section--split">
+        <div className="section-header">
+          <h2>Where Rommco fits in.</h2>
+          <p className="lead">
+            We don&apos;t try to replace your entire stack. Instead, Rommco
+            products sit alongside your existing tools and make them feel
+            faster, cleaner, and easier to live with.
+          </p>
+        </div>
+        <div className="kpi-row">
+          <div className="kpi-card">
+            <div className="kpi-label">For teams</div>
+            <h3>Less manual work</h3>
+            <p>
+              Reduce repetitive tasks across underwriting, review, QA, and
+              compliance—without asking teams to learn another massive platform.
             </p>
           </div>
-          <div className="card">
-            <div className="card-title">RegTech Compliance Monitor</div>
-            <p className="card-body">
-              Turn dense policies and regulations into automated checks. Catch
-              exceptions earlier and show your work when regulators or auditors
-              ask.
+          <div className="kpi-card">
+            <div className="kpi-label">For operations</div>
+            <h3>Cleaner workflows</h3>
+            <p>
+              Use automation to surface what matters: missing data, edge cases,
+              potential issues, and next steps that are actually actionable.
             </p>
           </div>
-          <div className="card">
-            <div className="card-title">Future: Automation Hardware</div>
-            <p className="card-body">
-              Rommco is also incubating practical automation products (like
-              commercial auto-mute for ads) focused on removing everyday
-              friction from work and life.
+          <div className="kpi-card">
+            <div className="kpi-label">For consumers</div>
+            <h3>Less everyday friction</h3>
+            <p>
+              Hardware and devices like auto-mute for commercials are designed
+              to quietly improve everyday experiences without adding complexity.
             </p>
           </div>
         </div>

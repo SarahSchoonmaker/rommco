@@ -1,91 +1,121 @@
-export default function HomePage() {
+// app/products/page.tsx
+
+export default function ProductsPage() {
   return (
-    <div className="flex flex-col items-center bg-slate-50">
-      {/* Hero Section */}
-      <section className="w-full max-w-5xl rounded-xl bg-white px-6 py-20 shadow-sm sm:px-10 mt-10">
-        <h1 className="text-4xl font-semibold tracking-tight text-slate-900">
-          Engineering smarter systems for compliance, automation, and everyday
-          life.
-        </h1>
-        <p className="mt-4 max-w-2xl text-lg text-slate-600">
-          Rommco builds intelligent tools that reduce complexity, streamline
-          decision-making, and eliminate real-world friction — for financial
-          institutions, operations teams, and consumers.
-        </p>
-      </section>
-
-      {/* Product Cards */}
-      <section className="mt-12 w-full max-w-5xl">
-        <h2 className="mb-6 text-2xl font-semibold text-slate-900">
-          Flagship Products
-        </h2>
-
-        <div className="grid gap-6 sm:grid-cols-2">
-          <div className="rounded-xl border border-slate-200 bg-white p-6 shadow hover:shadow-md transition">
-            <h3 className="text-xl font-medium text-slate-900">
-              Underwrite AI™
-            </h3>
-            <p className="mt-2 text-sm text-slate-600">
-              AI-powered document intelligence for broker-dealers and financial
-              institutions. Automatically extracts key data, flags
-              inconsistencies, and accelerates risk review.
-            </p>
-          </div>
-
-          <div className="rounded-xl border border-slate-200 bg-white p-6 shadow hover:shadow-md transition">
-            <h3 className="text-xl font-medium text-slate-900">RegWatch AI™</h3>
-            <p className="mt-2 text-sm text-slate-600">
-              Real-time monitoring and summarization of SEC, FINRA, and
-              regulatory guidance. Keeps compliance teams informed without
-              manual research.
-            </p>
-          </div>
+    <div className="home">
+      <section className="section">
+        <div className="section-header">
+          <h2>Products</h2>
+          <p className="lead">
+            Rommco builds a portfolio of software and hardware products focused
+            on one thing: eliminating friction from how people work and live.
+          </p>
         </div>
       </section>
 
-      {/* Divisions */}
-      <section className="mt-14 w-full max-w-5xl">
-        <h2 className="mb-6 text-2xl font-semibold text-slate-900">
-          Divisions
-        </h2>
-
-        <div className="space-y-4">
-          <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 className="text-lg font-medium text-slate-900">
-              Rommco Intelligence
-            </h3>
-            <p className="mt-2 text-sm text-slate-600">
-              AI and automation products designed for compliance, document
-              analysis, and operational decision-making across regulated
-              industries.
+      <section className="section">
+        <div className="grid grid-2 products-grid">
+          {/* RegTech Automation Suite */}
+          <article className="card product-card">
+            <div className="product-tag">RegTech &amp; Workflow Automation</div>
+            <h3>RegTech Automation Suite</h3>
+            <p>
+              A family of tools that help teams automate checks, surface
+              exceptions, and track policy drift. Instead of manually combing
+              through documents and logs, your reviewers see the riskiest or
+              most important items first.
             </p>
-          </div>
+            <ul className="product-list">
+              <li>Detect missing documentation and inconsistencies</li>
+              <li>Track adherence to internal policies over time</li>
+              <li>Generate audit-ready summaries and exportable reports</li>
+            </ul>
+            <div className="product-meta">
+              <span>
+                Good fit for: Compliance, operations, and review teams.
+              </span>
+              <a href="/pricing" className="product-link">
+                View subscription pricing →
+              </a>
+            </div>
+          </article>
 
-          <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 className="text-lg font-medium text-slate-900">
-              Rommco Engineering
-            </h3>
-            <p className="mt-2 text-sm text-slate-600">
-              Hardware and software solutions that solve everyday frustrations —
-              practical tools built to improve quality of life and eliminate
-              friction.
+          {/* AI Underwriter */}
+          <article className="card product-card">
+            <div className="product-tag">Decision Support</div>
+            <h3>AI Underwriter</h3>
+            <p>
+              An underwriting decision-support layer that normalizes data, flags
+              edge cases, and produces structured summaries to support human
+              judgment. Designed as a practical assistant, not a black-box
+              decision maker.
             </p>
-          </div>
+            <ul className="product-list">
+              <li>
+                Ingests borrower, deal, or case data from existing systems
+              </li>
+              <li>Highlights missing information and unusual patterns</li>
+              <li>Creates clear, repeatable summaries for human review</li>
+            </ul>
+            <div className="product-meta">
+              <span>
+                Good fit for: Lending, risk, credit, and review teams.
+              </span>
+              <a href="/contact" className="product-link">
+                Talk about your use case →
+              </a>
+            </div>
+          </article>
 
-          <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 className="text-lg font-medium text-slate-900">Rommco Labs</h3>
-            <p className="mt-2 text-sm text-slate-600">
-              Our R&D division focused on exploring future technologies,
-              prototypes, and new product categories that enhance human
-              experience and operational efficiency.
+          {/* Auto-Mute Device */}
+          <article className="card product-card">
+            <div className="product-tag">Consumer &amp; Space Experience</div>
+            <h3>Auto-Mute for Commercials &amp; Ads</h3>
+            <p>
+              A hardware device that detects commercial and ad segments and
+              automatically lowers or mutes the volume. Built for people who
+              want a calmer environment without changing how they watch TV.
             </p>
-          </div>
+            <ul className="product-list">
+              <li>Designed to sit quietly alongside your existing setup</li>
+              <li>Focuses on loudness and patterns, not content spying</li>
+              <li>Configurable behavior for different environments</li>
+            </ul>
+            <div className="product-meta">
+              <span>
+                Good fit for: Homes, waiting rooms, senior living, and
+                hospitality.
+              </span>
+              <a href="/pricing" className="product-link">
+                Learn about device pricing →
+              </a>
+            </div>
+          </article>
+
+          {/* Pipeline / Labs */}
+          <article className="card product-card">
+            <div className="product-tag">Rommco Labs</div>
+            <h3>In Development</h3>
+            <p>
+              Rommco Labs explores new ideas across data automation, AI-assisted
+              workflows, consumer devices, and quality-of-life tools. Not every
+              experiment becomes a product—but each one makes the next solution
+              more refined.
+            </p>
+            <ul className="product-list">
+              <li>Prototypes for internal tools and external platforms</li>
+              <li>Experiments with signal detection and pattern matching</li>
+              <li>Concepts for future consumer and enterprise products</li>
+            </ul>
+            <div className="product-meta">
+              <span>Interested in piloting something early?</span>
+              <a href="/contact" className="product-link">
+                Join an early access list →
+              </a>
+            </div>
+          </article>
         </div>
       </section>
-
-      <footer className="mt-16 mb-10 text-xs text-slate-500">
-        © {new Date().getFullYear()} Rommco Corporation. All rights reserved.
-      </footer>
     </div>
   );
 }
