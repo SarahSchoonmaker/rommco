@@ -11,19 +11,18 @@ export default function AboutPage() {
       <div className="card" style={{ marginTop: "1.5rem" }}>
         <h2 className="card-title">From Parts to Processes</h2>
         <p className="card-body">
-          Rather than chasing hype, Rommco focuses on tools that remove
-          friction: automating underwriting steps, packaging evidence for
-          auditors, and freeing compliance teams to focus on judgment—not
-          chasing missing files.
+          Rommco focuses on tools that remove friction: automating underwriting
+          steps, packaging evidence for auditors, and freeing compliance teams
+          to focus on judgment—not chasing missing files.
         </p>
         <p className="card-body" style={{ marginTop: "0.75rem" }}>
-          Rommco&apos;s modern chapter is dedicated to broker-dealers, RIAs,
-          lenders, and financial firms that want institutional-grade automation
-          without enterprise software bloat.
+          Current products are dedicated to broker-dealers, RIAs, lenders, and
+          financial firms that want institutional-grade automation without
+          enterprise software bloat.
         </p>
       </div>
 
-      <div className="card" style={{ marginTop: "1rem" }}>
+      {/* <div className="card" style={{ marginTop: "1rem" }}>
         <h2 className="card-title">How We Work</h2>
         <p className="card-body">
           We work with a small number of early partners while we expand our AI
@@ -35,7 +34,7 @@ export default function AboutPage() {
           For partnership inquiries, email:{" "}
           <a href="mailto:info@rommco.com">info@rommco.com</a>
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

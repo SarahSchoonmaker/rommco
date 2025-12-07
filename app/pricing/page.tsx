@@ -124,7 +124,7 @@ export default function PricingPage() {
           <div className="card">
             <h3>Standard Unit</h3>
             <p className="lead">
-              <strong>$149 – one-time</strong>
+              <strong>$199 – one-time</strong>
             </p>
             <p>
               A single Auto-Mute hardware unit designed for a typical home setup
@@ -161,7 +161,7 @@ export default function PricingPage() {
       </section>
 
       {/* Note / fine print-ish */}
-      <section className="section">
+      {/* <section className="section">
         <h2>Next Steps</h2>
         <p>
           Pricing shown here is intentionally simple and may evolve as we gather
@@ -173,7 +173,7 @@ export default function PricingPage() {
           Use the <a href="/contact">contact page</a> to tell us about your use
           case, and we&apos;ll respond with suggestions and next steps.
         </p>
-      </section>
+      </section> */}
     </div>
   );
 }
